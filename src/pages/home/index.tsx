@@ -1,20 +1,13 @@
-// Styles
 import { Container, Flex } from "@/styles/Global";
 import { Text } from "@/styles/Text";
 import { Button } from "@/styles/Buttons";
-
-// Components
 import { Stack } from "@/components/Stack";
 import { Project } from "@/components/Project";
 import { Contacts } from "@/components/Contacts";
-
-// Data
 import { stackData } from "@/utils/stackData";
 import { userData } from "@/utils/userData";
-
 import { FaGithub } from "react-icons/fa";
-
-// Page Style
+import { AboutMe } from "@/components/AboutMe";
 import {
   Header,
   HeaderContent,
@@ -29,7 +22,7 @@ import {
 
 export const Home = (): JSX.Element => {
   const gihubUrl = `https://github.com/${userData.githubUser}`;
-  const portfolioUrl = `https://github.com/${userData.githubUser}/my-portfolio`;
+  const portfolioUrl = `https://github.com/${userData.githubUser}/portfolio`;
 
   return (
     <main id="home">
@@ -47,7 +40,7 @@ export const Home = (): JSX.Element => {
               <Text color="grey4">Hello, my name is {userData.nameUser}</Text>
             </Flex>
             <Text as="h1" type="heading1" color="grey5">
-            I{" "}
+              I{" "}
               <Text as="span" type="heading1" color="brand1">
                 love
               </Text>{" "}
@@ -106,6 +99,7 @@ export const Home = (): JSX.Element => {
             </ProjectsAreaContent>
           </ProjectAreaWrapperColumns>
         </Container>
+        <AboutMe />
       </ProjectsArea>
       <Contacts />
     </main>
