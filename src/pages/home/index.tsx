@@ -7,7 +7,6 @@ import { Contacts } from "@/components/Contacts";
 import { stackData } from "@/utils/stackData";
 import { userData } from "@/utils/userData";
 import { FaGithub } from "react-icons/fa";
-import { AboutMe } from "@/components/AboutMe";
 import {
   Header,
   HeaderContent,
@@ -51,8 +50,15 @@ export const Home = (): JSX.Element => {
               projects
             </Text>
             <Text type="body1" color="grey2">
-              Discover here in this environment, created especially for you, all
-              my projects and technologies
+              Minha paixão pela tecnologia e minha descoberta da programação web
+              me levaram a uma jornada de transição de carreira. Com o apoio da
+              Kenzie Academy Brasil, estou trilhando um caminho emocionante rumo
+              a uma carreira na área de desenvolvimento web. Foi durante uma
+              experiência profissional que tive contato com a programação web. A
+              partir desse momento, percebi que havia encontrado minha vocação.
+              A habilidade de criar sites interativos e aplicativos que
+              melhorassem a vida das pessoas era algo que me preenchia
+              completamente.
             </Text>
             <HeaderButtonsArea>
               <Button as="a" type="primary" href="#projects">
@@ -99,7 +105,6 @@ export const Home = (): JSX.Element => {
             </ProjectsAreaContent>
           </ProjectAreaWrapperColumns>
         </Container>
-        <AboutMe />
       </ProjectsArea>
       <Contacts />
     </main>
